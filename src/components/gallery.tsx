@@ -29,7 +29,7 @@ export function Gallery() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-4">
         {galleryImages.map((image, index) => (
           <Dialog key={index}>
             <DialogTrigger asChild>
