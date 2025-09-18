@@ -4,8 +4,9 @@ import { Footer } from "@/components/footer";
 import { Section } from "@/components/section";
 import { Gallery } from "@/components/gallery";
 import { ContactForm } from "@/components/contact-form";
+import { ScrollToTop } from "@/components/scroll-to-top";
 import { Button } from "@/components/ui/button";
-import { Phone, MapPin, Clock } from "lucide-react";
+import { Phone, MapPin, Clock, MessageSquareShare } from "lucide-react";
 
 export default function Home() {
   return (
@@ -202,10 +203,15 @@ export default function Home() {
                   <Phone className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold text-foreground">Phone</h3>
-                    <p className="text-muted-foreground">(213) 369-1782</p>
+                    <a href="tel:(213) 369-1782">
+                      <p className="text-muted-foreground">(213) 369-1782</p>
+                    </a>
                     <p className="text-sm text-muted-foreground italic">
                       Please text us instead of calling
                     </p>
+                    <a href="sms:(213) 369-1782">
+                      <MessageSquareShare className="h-6 w-6 text-primary mt-1" />
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -239,6 +245,7 @@ export default function Home() {
       </main>
 
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
