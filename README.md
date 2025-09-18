@@ -1,8 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hair by Grace - Professional Hair Salon Website
+
+A modern, responsive website for Hair by Grace, a professional hair salon in Los Angeles specializing in cuts, coloring, extensions, and styling. Built with Next.js 15, React 19, TypeScript, and Tailwind CSS.
+
+## About Hair by Grace
+
+Grace is an experienced hairstylist with over 30 years of expertise, bringing international training from Korea, Japan, UK, and USA. She specializes in:
+
+- **Hair Coloring**: Ombre/Balayage, highlights, fashion colors, magic straight
+- **Hair Treatments**: Digital perm, keratin treatment, hair BB cream, deep treatments
+- **Hair Extensions**: Glue extensions, keratin extensions, braid extensions (all human hair starting at $200+)
+- **Styling Services**: Haircuts, blow dry, wedding hair & makeup, updo styling, head spa
+- **International Expertise**: Asian, European, and American styling techniques
+
+## Features
+
+- 🎨 Modern, responsive design with beautiful UI components
+- 📱 Mobile-first approach with Tailwind CSS
+- 📋 Contact form with validation using React Hook Form and Zod
+- 🖼️ Photo gallery showcasing Grace's work
+- 🎯 SEO-optimized with Next.js App Router
+- ⚡ Fast performance with Next.js 15 and React 19
+- 🔧 TypeScript for type safety
+- 🎨 Custom UI components built with Radix UI
+
+## Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Frontend**: React 19, TypeScript
+- **Styling**: Tailwind CSS v4
+- **UI Components**: Radix UI primitives
+- **Forms**: React Hook Form with Zod validation
+- **Icons**: Lucide React
+- **Fonts**: GeneralSans (custom font)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd hair-by-grace-website
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
@@ -14,23 +73,57 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── api/               # API routes
+│   │   └── contact/       # Contact form endpoint
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Home page
+├── components/            # React components
+│   ├── ui/               # Reusable UI components
+│   ├── contact-form.tsx  # Contact form component
+│   ├── footer.tsx        # Footer component
+│   ├── gallery.tsx       # Photo gallery component
+│   ├── header.tsx        # Header component
+│   └── section.tsx       # Section wrapper component
+└── lib/                  # Utility functions
+    ├── utils.ts          # Utility functions
+    └── validators.ts     # Form validation schemas
+```
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact Information
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Phone**: (213) 369-1782 (please text instead of calling)
+- **Location**: 300 S Hobart Blvd., Suite 102, Los Angeles, CA 90020
+- **Hours**: Monday-Wednesday: 10:00 AM - 8:00 PM, Thursday-Sunday: Please call for hours
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The website is optimized for deployment on Vercel:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push your code to a Git repository
+2. Connect your repository to [Vercel](https://vercel.com)
+3. Deploy with one click
+
+For other deployment platforms, run `npm run build` and deploy the `.next` folder.
+
+## Contributing
+
+This is a client project for Hair by Grace salon. For any updates or modifications, please contact the development team.
+
+## License
+
+Private project for Hair by Grace salon.
